@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCL 3D View</title>
+  </head>
+  <body>
+    <!-- Copy the following canvas and components in your page, changing their size / texts and other values if needed  -->
+    <canvas
+      id="viewerCanvas"
+      class="viewerComponent"
+      style="
+        background-color: #cccccc;
+        border: 1px solid gray;
+        outline: none;
+        touch-action: none;
+      "
+      tabindex="1"
+    ></canvas>
+    <script type="text/javascript" src="lib/big.min.js"></script>
+    <script type="text/javascript" src="lib/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="lib/jszip.min.js"></script>
+    <script type="text/javascript" src="lib/core.min.js"></script>
+    <script type="text/javascript" src="lib/geom.min.js"></script>
+    <script type="text/javascript" src="lib/stroke.min.js"></script>
+    <script
+      type="text/javascript"
+      src="lib/batik-svgpathparser.min.js"
+    ></script>
+    <script type="text/javascript" src="lib/jsXmlSaxParser.min.js"></script>
+    <script type="text/javascript" src="lib/triangulator.min.js"></script>
+    <script type="text/javascript" src="lib/viewmodel.min.js"></script>
+    <script type="text/javascript" src="lib/viewhome.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
