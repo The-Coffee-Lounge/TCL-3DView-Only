@@ -41,14 +41,14 @@ viewHome(
   "viewerCanvas", // Id of the canvas
   homeUrl, // URL or relative URL of the home to display
   () => {}, // Callback called in case of error
-  () => {}, // Callback called while loading
+  onprogression, // Callback called while loading
   {
     roundsPerMinute: 0, // Rotation speed of the animation launched once home is loaded in rounds per minute, no animation if missing or equal to 0
     navigationPanel: "none", // Displayed navigation arrows, "none" or "default" for default one or an HTML string containing elements with data-simulated-key
     // attribute set "UP", "DOWN", "LEFT", "RIGHT"... to replace the default navigation panel, "none" if missing
     // aerialViewButtonId: "aerialView",      // Id of the aerial view radio button, radio buttons hidden if missing
-    // virtualVisitButtonId: "virtualVisit", // Id of the aerial view radio button, radio buttons hidden if missing
-    // levelsAndCamerasListId: "levelsAndCameras", // Id of the levels and cameras select component, hidden if missing
+    virtualVisitButtonId: "virtualVisit", // Id of the aerial view radio button, radio buttons hidden if missing
+    levelsAndCamerasListId: "levelsAndCameras", // Id of the levels and cameras select component, hidden if missing
     /* level: "Roof", */ // Uncomment to select the displayed level, default level if missing */
     selectableLevels: ["Ground Floor", "Second Floor"], // Uncomment to choose the list of displayed levels, no select component if empty array */
     /* camera: "Exterior view", */ // Uncomment to select a camera, default camera if missing */
